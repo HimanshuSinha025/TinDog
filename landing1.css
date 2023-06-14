@@ -1,0 +1,408 @@
+body{
+    font-family: "Trirong", serif;
+}
+
+#title{
+    background-color: #fc7baa;
+}
+.container-fluid{
+    padding: 3% 5%;
+}
+
+.nav-item:hover {
+    scale: 150%;
+   }
+   
+.nav-item:active {
+    width: 100%; height: 100%;
+    transition: scale 400ms;
+    /* transform: scale(0.97); */
+   }
+
+.nav-item{
+    padding-left: 38px;
+    font-size: large;
+    padding-top: 10px;
+}
+h1{
+    font-family:  "Sofia", sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.navbar{
+    padding-bottom: 4.5rem;
+}
+.navbar-brand{
+    font-family: "Audiowide", sans-serif;
+    padding-right: 30px;
+    font-size: 50px;
+}
+.wrapper{
+    overflow: hidden;
+}
+.wrapper img{
+    width: 100%; height: 100%;
+    transition: scale 400ms;
+}
+.wrapper:hover img{
+    scale: 120%;
+}
+#features{
+    padding: 6% 9%;
+}
+.feature-box{
+    text-align: center;
+    padding: 2cqmin;
+}
+#testimonials{
+    padding: 2%;
+    background-color: rgb(252, 200, 217);
+    text-align: center;
+}
+.img{
+    border-radius: 50%;
+}
+#press{
+    padding: 2%;
+    padding-top: 4%;
+}
+#pricing{
+    text-align: center;
+    padding: 3%;
+}
+
+.wrappers{
+    max-width: 1090px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.wrappers .table{
+    background: #fff;
+    width: calc(33% - 20px);
+    padding: 30px 30px;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 1020px){
+    .wrappers .table{
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 698px){
+    .wrappers .table{
+        width: 100%;
+    }
+}
+
+.table .price-section{
+   display: flex;
+   justify-content: center;
+}
+
+.price-section .price-area{
+    height: 120px;
+    width: 120px;
+    background: #ffd861;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.price-section .price-area .inner-area{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    color: #fff;
+    line-height: 117px;
+    text-align: center;
+    position: relative;
+}
+
+.price-area .inner-area .text{
+    font-size: 25px;
+    font-weight: 400;
+    position: absolute;
+    top: -10px;
+    left: 17px;
+}
+
+.price-area .inner-area .price{
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.table .package-name{
+    width: 100%;
+    height: 2px;
+    background: #ffecb3;
+    margin: 35px 0;
+    position: relative;
+}
+
+.table .package-name::before{
+    position: absolute;
+    content: "Basic";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    font-size: 25px;
+    padding: 0 10px;
+    font-weight: bolder;
+}
+
+.table .features li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.features li .list-name{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.features li .icon{
+    font-size: 15px;
+}
+
+.features li .icon.check{
+    color: #2db94d;
+}
+
+.features li .icon.cross{
+    color: #cd3241;
+}
+
+.table .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.table .btn button{
+    width: 80%;
+    height: 50px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.basic .price-area,
+.basic .inner-area{
+    background: #ffd861;
+}
+
+.basic .btn button{
+    background: #fff;
+    color: #ffd861;
+    border: 2px solid #ffd861;
+}
+
+.basic .btn button:hover{
+    border-radius: 6px;
+    background: #ffd861;
+    color: #fff;
+}
+
+.Premium .price-area,
+.Premium .inner-area{
+    background: #a26bfa;
+}
+
+.Premium .btn button{
+    background: #fff;
+    color: #a26bfa;
+    border: 2px solid #a26bfa;
+}
+
+.Premium .btn button:hover{
+    border-radius: 6px;
+    background: #a26bfa;
+    color: #fff;
+}
+
+.Ultimate .price-area,
+.Ultimate .inner-area{
+    background: #43ef8b;
+}
+
+.Ultimate .btn button{
+    background: #fff;
+    color: #43ef8b;
+    border: 2px solid #43ef8b;
+}
+
+.Ultimate .btn button:hover{
+    border-radius: 6px;
+    background: #43ef8b;
+    color: #fff;
+}
+
+.basic .package-name{
+    background: #ffecb3;
+}
+
+.Premium .package-name{
+    background: #a26bfa;
+}
+
+.Ultimate .package-name{
+    background: #43ef8b;
+}
+
+.basic .package-name::before{
+    content: "Basic";
+}
+
+.Premium .package-name::before{
+    content: "Premium";
+}
+
+.Ultimate .package-name::before{
+    content: "Ultimate";
+}
+/* 
+.basic ::selection,
+.basic .price-area,
+.basic .inner-area{
+    background: #ffd861;
+}
+
+.Premium ::selection,
+.Premium .price-area,
+.Premium .inner-area{
+    background: #a26bfa;
+}
+
+.Ultimate ::selection,
+.Ultimate .price-area,
+.Ultimate .inner-area{
+    background: #43ef8b;
+} */
+
+.download{
+    text-align: center;
+    background-color: #faadc0;
+    padding: 4%;
+}
+
+/* Wrapper */
+.icon-button {
+	background-color: white;
+	border-radius: 3.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2.0rem;
+	height: 3.6rem;
+	line-height: 3.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3.6rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 3.6rem;
+	height: 3.6rem;
+	border-radius: 3.6rem;
+	margin: -1.8rem;
+}
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.linkedin span {
+	background-color: #0077b5;
+}
+.instagram span {
+  background-color: #bc2a8d;
+}
+.github span {
+  background-color: #333;
+}
+.youtube span {
+  background-color: #ff0000;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 3.6rem;
+	left: 0;
+	line-height: 3.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 3.6rem;
+	z-index: 10;
+}
+.icon-button .fa-twitter {
+	color: #4099ff;
+}
+.icon-button .fa-facebook {
+	color: #3B5998;
+}
+.icon-button .fa-linkedin {
+	color: #0077b5;
+}
+.icon-button .fa-instagram {
+	color: #4099ff;
+}
+.icon-button .fa-github {
+	color: #333;
+}
+.icon-button .fa-youtube {
+	color: #f80202;
+}
+.icon-button:hover .fa-twitter,
+.icon-button:hover .fa-facebook,
+.icon-button:hover .fa-linkedin,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-youtube,
+.icon-button:hover .fa-github{
+	color: white;
+}
+
+.social-icon{
+    text-align: center;
+    padding: 3%;
+}
